@@ -20,14 +20,19 @@ html{
     font-family: Roboto, sans-serif;
 }
 
+input{
+    margin: 5px 0;
+}
+
 .container{
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px 10px;
 }
 
 .flex{
     display: flex;
+    flex-direction: column;
 }
 
 .flex--space-between{
@@ -83,6 +88,11 @@ h2{
     margin: 30px 0;
 }
 
+.budget__incomes, 
+.budget__expenses{
+    margin-top: 30px;
+}
+
 .budget__list{
     padding: 20px 0;
     border-top: 1px solid var(--deep-blue);
@@ -125,9 +135,26 @@ h2{
 
 .budget__list__summary{
     margin-top: 30px;
+    border-bottom: 1px solid var(--success);
     color: var(--biscuit);
     font-size: 18px;
     font-weight: 700;
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        width: 960px;
+    }
+
+    .flex{
+        flex-direction: row;
+    }
+
+    .budget__incomes, 
+
+    .budget__expenses{
+        margin-top: 0;
+    }
 }
 
 
