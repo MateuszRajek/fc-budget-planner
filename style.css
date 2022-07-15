@@ -1,6 +1,14 @@
 :root{
     --main-bg-gradient: linear-gradient(#0BAB64, #3BB78F);
     --white: #FFFFFF;
+    --peach: #FF826E;
+    --success: #69D6F4;
+    --warning: #E3C165;
+    --danger: #F70E0E;
+    --biscuit: #F0D0B4;
+    --golden: #FCD770;
+    --orange: #C75719;
+    --deep-blue: #0B0B43;
 }
 
 body{
@@ -8,9 +16,14 @@ body{
     background-image: var(--main-bg-gradient)
 } 
 
+html{
+    font-family: Roboto, sans-serif;
+}
+
 .container{
     width: 960px;
     margin: 0 auto;
+    padding: 30px 10px;
 }
 
 .flex{
@@ -21,11 +34,14 @@ body{
     justify-content: space-between;
 }
 
+.text--center{
+    text-align: center;
+}
 
 .app__logo{
     width: 150px;
     height: 150px;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .app__logo img{
@@ -34,9 +50,84 @@ body{
 }
 
 h1{
-    text-align: center;
+    color: var(--peach);
+    font-size: 34px;
+    font-weight: 700;
 }
 
-.budget__state p{
-    text-align: center;
+h2{
+    font-size: 20px;
+    font-weight: 700;
 }
+
+.budget__state{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.budget__state--success{
+    color: var(--success);
+}
+
+/* This class can be used when the budget value is 0 
+.budget__state--warning{
+    color: var(--danger)
+} */
+
+/* This class can be used when the budget value is below 0
+.budget__state--danger{
+    color: var(--danger)
+} */
+
+.budget__list__wrapper{
+    margin: 30px 0;
+}
+
+.budget__list{
+    padding: 20px 0;
+    border-top: 1px solid var(--deep-blue);
+    border-bottom: 1px solid var(--deep-blue);
+}
+
+.incomes__header{
+    color: var(--golden);
+}
+
+.expenses__header{
+    color: var(--orange);
+}
+
+.budget__list__form{
+    margin: 15px 0;
+}
+
+.budget__list__form__input{
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+}
+
+.budget__list__form__input--text{
+    width: 270px;
+}
+
+.budget__list__form__input--number{
+    width: 80px
+}
+
+.budget__list__form__input__button{
+    padding: 3px 20px;
+    border: none;
+    background-color: var(--deep-blue);
+    color: var(--white);
+    font-size: 18px;
+}
+
+.budget__list__summary{
+    margin-top: 30px;
+    color: var(--biscuit);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
