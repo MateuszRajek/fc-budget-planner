@@ -1,19 +1,6 @@
-:root{
-    --main-bg-gradient: linear-gradient(#0BAB64, #3BB78F);
-    --white: #FFFFFF;
-    --peach: #FF826E;
-    --success: #69D6F4;
-    --warning: #E3C165;
-    --danger: #F70E0E;
-    --edit: #0BAB64;
-    --biscuit: #F0D0B4;
-    --golden: #FCD770;
-    --orange: #C75719;
-    --deep-blue: #0B0B43;
-}
+@import './variables.css';
 
 body{
-    min-height: 100vh;
     background-image: var(--main-bg-gradient)
 } 
 
@@ -23,6 +10,10 @@ html{
 
 input{
     margin: 5px 0;
+}
+
+main{
+    min-height: 100vh;
 }
 
 .container{
@@ -56,17 +47,17 @@ input{
 
 h1{
     color: var(--peach);
-    font-size: 34px;
+    font-size: var(--font-xl);
     font-weight: 700;
 }
 
 h2{
-    font-size: 20px;
+    font-size: var(--font-m);
     font-weight: 700;
 }
 
 .budget__state{
-    font-size: 28px;
+    font-size: var(--font-l);
     font-weight: 700;
 }
 
@@ -113,7 +104,7 @@ h2{
 }
 
 .budget__list__form__input{
-    font-size: 18px;
+    font-size: var(--font-sm);
     line-height: 24px;
     border: none;
 }
@@ -131,15 +122,15 @@ h2{
     border: none;
     background-color: var(--deep-blue);
     color: var(--white);
-    font-size: 18px;
+    font-size: var(--font-sm);
     font-weight: 700;
 }
 
 .budget__list__summary{
     margin-top: 30px;
     border-bottom: 1px solid var(--success);
-    color: var(--white);
-    font-size: 18px;
+    color: var(--deep-blue);
+    font-size: var(--font-sm);
     font-weight: 700;
 }
 
@@ -174,7 +165,7 @@ h2{
     margin: 2px;
     border: none;
     color: var(--white);
-    font-size: 14px;
+    font-size: var(--font-s);
     font-weight: 700;
     line-height: 18px;
 }
@@ -194,11 +185,14 @@ h2{
     }
 } */
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
 .icon__credentials{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    color: var(--success);
-    font-size: 8px;
+    color: var(--white);
+    font-size: var(--font-s);
 }
