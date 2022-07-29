@@ -12,17 +12,19 @@
     <title>Budget Planner</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class="text--center">Home budget</h1>
-        <div class="app__logo"><img src="./budget.png"/></div>
-        <div id="budgetState" class="budget__state budget__state--success">
-            <p class="text--center">You can still spend <span id="budgetValue">987</span> PLN</p>
-        </div>
-        <div class="flex flex--space-between budget__list__wrapper">
+    <main class="container">
+        <header>
+            <h1 class="text--center">Home budget</h1>
+            <div class="app__logo"><img src="./budget.png"/></div>
+            <div id="budgetState" class="budget__state budget__state--success">
+                <p class="text--center">You can still spend <span id="budgetValue">987</span> PLN</p>
+            </div>
+        </header>
+        <section class="flex flex--space-between budget__list__wrapper">
             <div class="budget__incomes">
                 <h2 class="budget__list__header incomes__header">Incomes</h2>
                 <form id="incomeForm" class="budget__list__form">
-                    <input type="text" id="incomeTitle" class="budget__list__form__input budget__list__form__input budget__list__form__input--text">
+                    <input type="text" id="incomeTitle" class="budget__list__form__input budget__list__form__input--text">
                     <input type="number" id="incomeValue" class="budget__list__form__input budget__list__form__input--number">
                     <input type="submit" value="Add" class="budget__list__form__input__button">
                 </form>
@@ -71,10 +73,13 @@
                 </ul>
                 <p class="budget__list__summary">Expenses sum: <span id="expensesValue">5500</span> PLN</p>
             </div> 
-        </div>
+        </section>
 
-    </div>
-    <a class="icon__credentials" href="https://www.flaticon.com/free-icons/accounting" title="accounting icons">Accounting icons created by Eucalyp - Flaticon</a>
+    </main>
+    <footer>
+        <a class="icon__credentials" href="https://www.flaticon.com/free-icons/accounting" title="accounting icons">Accounting icons created by Eucalyp - Flaticon</a>
+    </footer>
+    
 
     <script src="main.js"></script>
 </body>
